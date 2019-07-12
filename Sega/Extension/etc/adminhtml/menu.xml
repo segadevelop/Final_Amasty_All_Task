@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sega_Extension::extension" title="Sega Extension" module="Sega_Extension" sortOrder="51" resource="Sega_Extension::exstension"/>
+        <add id="Sega_Extension::post" title="Manage Posts" module="Sega_Extension" sortOrder="10" action="sega_extension/post" resource="Sega_Extension::post" parent="Sega_Extension::extension"/>
+        <add id="Sega_Extension::extension_configuration" title="Configuration" module="Sega_Extension" sortOrder="99" parent="Sega_Extension::extension" action="adminhtml/system_config/edit/section/extension" resource="Sega_Extension::extension_configuration"/>
+    </menu>
+</config>
